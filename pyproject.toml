@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trendpulse-ai"
+version = "1.0.0"
+description = "Enterprise Time-Series Stock Trend Prediction & Quantitative Analytics Engine"
+readme = "README.md"
+authors = [
+    { name = "Lohith Varanasi", email = "lohithvara004@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.35.0",
+    "yfinance>=0.2.40",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "tensorflow>=2.15.0",
+    "plotly>=5.18.0",
+    "matplotlib>=3.8.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "flake8>=7.0.0",
+    "black>=24.0.0",
+    "mypy>=1.9.0",
+]
